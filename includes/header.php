@@ -5,7 +5,7 @@ Session::init(); ?>
 <html lang="en">
 <div style="display:none">
 	<?php
-	include_once 'admin/controller/cart.php';
+	// include_once 'admin/controller/cart.php';
 	include_once 'admin/controller/product.php';
 	?>
 </div>
@@ -37,7 +37,7 @@ Session::init(); ?>
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 	<!-- PHP CODE -->
-	
+
 
 </head>
 
@@ -45,23 +45,23 @@ Session::init(); ?>
 	<!-- HEADER -->
 	<header>
 		<!-- TOP HEADER -->
-		
+
 		<div id="top-header">
 			<div class="container">
 				<ul class="header-links pull-right">
 					<?php
-					$ct = new cart();
-					if (isset($_GET["custumerid"])) {
-						$delCart = $ct->del_all_data_cart();
-						Session::destroy();
-					}
+					// $ct = new cart();
+					// if (isset($_GET["custumerid"])) {
+					// 	$delCart = $ct->del_all_data_cart();
+					// 	Session::destroy();
+					// }
 					?>
 					<?php
 					$check_login = Session::get('custumer_longin');
 					$custumerId = Session::get("custumer_id");
 					$custumerName = Session::get("custumer_name");
 					if ($check_login == false) {
-						?>
+					?>
 						<li><a href="register.php"><i class="fa fa-user-o"></i>Đăng Kí</a></li>
 						<li><a href="login.php"><i class="fa fa-user-o"></i>Đăng Nhập</a></li>
 					<?php } else { ?>
@@ -93,9 +93,9 @@ Session::init(); ?>
 					<div class="col-md-6">
 						<div class="header-search">
 							<form class="row" action="search.php" method="POST">
-								<span class="col-md-2"></span>	
+								<span class="col-md-2"></span>
 								<input class="col-md-5 input" placeholder="Nhập từ khoá" name="search_product">
-								<button class="search-btn col-md-5" type="submit"  >Tìm Kiếm</button>
+								<button class="search-btn col-md-5" type="submit">Tìm Kiếm</button>
 							</form>
 						</div>
 					</div>
@@ -109,12 +109,12 @@ Session::init(); ?>
 								<a aria-expanded="true" href="cart.php">
 									<i class="fa fa-shopping-cart"></i>
 									<span>Giỏ Hàng</span>
-									<?php 
-										 $get_product_cart = $ct->get_product_cart();
-										 if ($get_product_cart) {
+									<?php
+									$get_product_cart = $ct->get_product_cart();
+									if ($get_product_cart) {
 									?>
-									<div class="qty" style="background-color: red;right: 28px;top: -2px;width: 10px;height: 10px;"></div>
-									<?php }?>
+										<div class="qty" style="background-color: red;right: 28px;top: -2px;width: 10px;height: 10px;"></div>
+									<?php } ?>
 								</a>
 							</div>
 						</div>
@@ -138,20 +138,20 @@ Session::init(); ?>
 			<div id="responsive-nav">
 				<!-- NAV -->
 				<ul class="main-nav nav navbar-nav">
-					<li ><a href="index.php">Trang Chủ</a></li>
+					<li><a href="index.php">Trang Chủ</a></li>
 					<li class=""><a href="cart.php">Giỏ Hàng</a></li>
-					<?php 
-					$get_product_order_nav = $ct->get_product_order($custumerId);
-					if($get_product_order_nav){
-					?>
-					<li class=""><a href="orderdetail.php">Đơn Hàng Đã Đặt</a></li>
-					<?php }?>
 					<?php
-					$cat = new category();
+					$get_product_order_nav = $ct->get_product_order($custumerId);
+					if ($get_product_order_nav) {
+					?>
+						<li class=""><a href="orderdetail.php">Đơn Hàng Đã Đặt</a></li>
+					<?php } ?>
+					<?php
+					// $cat = new category();
 					$get_category_index = $cat->get_category_index();
 					if ($get_category_index) {
 						while ($result = $get_category_index->fetch_assoc()) {
-							?>
+					?>
 							<li><a href="store.php?catid=<?php echo $result['Id'] ?>&page=1"><?php echo $result['Name'] ?></a></li>
 					<?php
 						}
@@ -173,6 +173,6 @@ Session::init(); ?>
 	<?php
 	$db = new Database();
 	$fm = new Format();
-	$cs = new custumer();
-	$product = new product();
+	// $cs = new custumer();
+	// $product = new product();
 	?>
