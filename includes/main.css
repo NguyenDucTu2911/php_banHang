@@ -1,0 +1,8 @@
+.btn-thanhtoan {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.primary-btn:hover{
+    background-color: #17ac2f !important
+}

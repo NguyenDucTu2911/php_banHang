@@ -6,19 +6,19 @@
 			<div class="container">
 				<!-- row -->
 				<div class="row">
-					<div class="col-md-3 col-xs-6">
+					<div class="col-md-12 col-xs-6 text-center">
 						<div class="footer">
-							<h3 class="footer-title">Về Chúng Tôi</h3>
-							<p>VIET LAPTOP Cung cấp đầy đủ các loại lapop phù hợp với nhu cầu của mọi người</p>
-							<ul class="footer-links">
+							<!-- <h3 class="footer-title">Về Chúng Tôi</h3> -->
+							<p>TQH LAPTOP Cung cấp đầy đủ các loại lapop phù hợp với nhu cầu của mọi người</p>
+							<!-- <ul class="footer-links">
 								<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
 								<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-								<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
-							</ul>
+								<li><a href="#"><i class="fa fa-envelope-o"></i>tqh@email.com</a></li>
+							</ul> -->
 						</div>
 					</div>
 
-					<div class="col-md-3 col-xs-6">
+					<!-- <div class="col-md-3 col-xs-6">
 						<div class="footer">
 							<h3 class="footer-title">Danh mục</h3>
 							<ul class="footer-links">
@@ -54,7 +54,7 @@
 								<li><a href="#">Kiểm Tra Đơn Hàng</a></li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<!-- /row -->
 			</div>
@@ -63,26 +63,27 @@
 		<!-- /top footer -->
 
 		<!-- bottom footer -->
-		<div id="bottom-footer" class="section">
-			<div class="container">
+		<!-- <div id="bottom-footer" class="section"> -->
+			<!-- <div class="container"> -->
 				<!-- row -->
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<span class="copyright">
+				<!-- <div class="row"> -->
+					<!-- <div class="col-md-12 text-center"> -->
+						<!-- <span class="copyright"> -->
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							Copyright &copy;
-							<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-							template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-								href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Copyright &copy; -->
+							<!-- <script>document.write(new Date().getFullYear());</script> All rights reserved | This -->
+							<!-- template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a -->
+								<!-- href="https://colorlib.com" target="_blank">Colorlib</a> -->
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</span>
-					</div>
-				</div>
+						<!-- </span> -->
+					<!-- </div> -->
+				<!-- </div> -->
 				<!-- /row -->
-			</div>
+			<!-- </div> -->
 			<!-- /container -->
-		</div>
+		<!-- </div> -->
 		<!-- /bottom footer -->
+
 	</footer>
 	<!-- /FOOTER -->
 

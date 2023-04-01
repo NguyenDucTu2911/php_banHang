@@ -9,7 +9,8 @@ Session::checkSession();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Accounts - Product Admin Template</title>
+    <title>Trang Adnin</title>
+    <link rel = "icon" href ="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png"type = "img/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
     <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="stylesheet" href="css/fontawesome.min.css" />
@@ -17,10 +18,7 @@ Session::checkSession();
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="css/templatemo-style.css">
-    <!--
-	Product Admin CSS Template
-	https://templatemo.com/tm-524-product-admin
-    -->
+   
 </head>
 
 <body id="reportsPage">
@@ -29,7 +27,7 @@ Session::checkSession();
         <nav class="navbar navbar-expand-xl">
             <div class="container h-100">
                 <a class="navbar-brand" href="index.php">
-                    <h1 class="tm-site-title mb-0">Product Admin</h1>
+                    <h1 class="tm-site-title mb-0"> Admin</h1>
                 </a>
                 <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars tm-nav-icon"></i>
@@ -43,7 +41,7 @@ Session::checkSession();
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="index.php">
-                                    <i class="fas fa-tachometer-alt"></i> Order
+                                    <i class="fas fa-tachometer-alt"></i> Hàng
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -54,7 +52,7 @@ Session::checkSession();
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="products.php">
-                                    <i class="fas fa-shopping-cart"></i> Products
+                                    <i class="fas fa-shopping-cart"></i> sản phẩm
                                 </a>
                             </li>
                         <?php } ?>
@@ -64,7 +62,7 @@ Session::checkSession();
                             ?>
                         <li class="nav-item">
                             <a class="nav-link" href="categoryList.php">
-                                <i class="fas fa-shopping-cart"></i> categoryList
+                                <i class="fas fa-shopping-cart"></i> loại hàng
                             </a>
                         </li>
                         <?php } ?>
@@ -74,7 +72,7 @@ Session::checkSession();
                             ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="accountsList.php">
-                                    <i class="far fa-user"></i> Accounts
+                                    <i class="far fa-user"></i>Tài Khoản
                                 </a>
                             </li>
                         <?php
@@ -87,7 +85,7 @@ Session::checkSession();
                             <li class="col-md-9">
                                 <a class="" style="color:white;">
                                     <b>
-                                        Hello, <?php echo Session::get('adminName') . '!!'; ?>
+                                        Xin Chào, <?php echo Session::get('adminName') . '!'; ?>
                                     </b>
                                 </a>
                             </li>
@@ -96,7 +94,7 @@ Session::checkSession();
                             } ?>
                             <li class="col-md-3">
                                 <a style="color:white" href="?action=logout">
-                                    <b>LOGOUT<b>
+                                    <b>Đăng xuất<b>
                                 </a>
                             </li>
 

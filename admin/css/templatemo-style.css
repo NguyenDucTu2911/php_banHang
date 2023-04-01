@@ -343,6 +343,7 @@ thead {
   border: 2px solid #f5a623;
   font-size: 90%;
   font-weight: 600;
+  width: 100%;
 }
 .btn-primary:active,
 .btn-primary:hover {

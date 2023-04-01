@@ -20,7 +20,7 @@
   <script>
     $(function() {
       $("#expire_date").datepicker({
-        defaultDate: "10/22/2020"
+        defaultDate: "10/02/2023"
       });
     });
   </script>

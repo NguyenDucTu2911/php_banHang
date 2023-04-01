@@ -313,14 +313,15 @@ textarea.input {
 \*----------------------------*/
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
 }
 
 .section-title {
   position: relative;
   margin-bottom: 30px;
   margin-top: 15px;
+  text-align: center;
 }
 
 .section-title .title {
@@ -434,7 +435,7 @@ textarea.input {
 #top-header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #1E1F29;
+  background-color: #305c86;
 }
 
 .header-links li {
@@ -467,7 +468,7 @@ textarea.input {
 #header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #15161D;
+  background-color: #194a75;
 }
 
 .header-logo {
@@ -498,12 +499,13 @@ textarea.input {
 .header-search form .input {
   width: calc(100% - 260px);
   margin-right: -4px;
+  border-radius: 21px 0 0 20px;
 }
 
 .header-search form .search-btn {
   height: 40px;
   width: 100px;
-  background: #518ce7;
+  background: #010a18;
   color: #FFF;
   font-weight: 700;
   border: none;
@@ -532,7 +534,7 @@ textarea.input {
   position: relative;
   width: 90px;
   text-align: center;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .header-ctn>div>a>i {
@@ -651,11 +653,11 @@ textarea.input {
 \*----------------------------*/
 
 .main-nav>li+li {
-  margin-left: 30px
+  margin-left: 18px
 }
 
 .main-nav>li>a {
-  padding: 20px 0px;
+  padding: 15px 32px;
 }
 
 .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
@@ -667,7 +669,7 @@ textarea.input {
   content: "";
   display: block;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background-color: #518ce7;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
@@ -809,8 +811,8 @@ textarea.input {
 #hot-deal.section {
   padding: 60px 0px;
   margin: 30px 0px;
-  background-color: #E4E7ED;
-  background-image: url('../img/hotdeal.png');
+  background-color: #ffffff;
+  background-image: url('../img/deal.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1563,6 +1565,7 @@ textarea.input {
   border-radius: 40px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
+  margin-top: 10px;
 }
 
 .product-details .add-to-cart .add-to-cart-btn>i {
